@@ -26,9 +26,9 @@ app.use('/api/names', nameRouter)
 
 app.use("/api/items", listRouter)
 
-app.get('/',(req, res)=>{
-  res.send(`Hello World`)
-})
+// app.get('/',(req, res)=>{
+//   res.send(`Hello World`)
+// })
 
 
 app.listen(port, () =>{
