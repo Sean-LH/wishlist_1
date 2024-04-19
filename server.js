@@ -9,6 +9,7 @@ const listRouter = require('./routes/itemRouter')
 // Middleware 
 app.use(express.json())
 app.use(morgan('dev'))
+app.use(express.static(path.join(__dirname, "client", "dist")))
 
 // error Handler
 app.use( (err, req, res, next) =>{
@@ -30,6 +31,9 @@ app.use("/api/items", listRouter)
 //   res.send(`Hello World`)
 // })
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
 
 app.listen(port, () =>{
   console.log(`server is green on port ${port}`)
