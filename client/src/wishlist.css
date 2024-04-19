@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  border: none;
+}
+.page{
+  background-color: rgb(242, 208, 166);
+  border: 2px solid black
+}
+.banner-space{
+  border: 2px solid red;
+}
+.name_form{
+  border: 2px solid purple
+}
+.list-box{
+  border: 2px solid red;
+}
