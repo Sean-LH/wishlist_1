@@ -6,6 +6,8 @@ const mongoose = require('mongoose')
 const nameRouter = require('./routes/nameRouter')
 const listRouter = require('./routes/itemRouter')
 
+const path = require("path")
+
 // Middleware 
 app.use(express.json())
 app.use(morgan('dev'))
